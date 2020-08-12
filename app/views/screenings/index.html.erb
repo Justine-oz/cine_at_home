@@ -1,36 +1,49 @@
-<div class="container">
-<div class="search-form">
-    <h1>Find a wonderful screening near you</h1>
+<div class="main-container">
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1541415109140-571dd7c83b75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1542&q=80);">
+  <div class="container">
+    <h1>Find a <strong>wonderful screening</strong> near you!</h1>
+    <div class="align">
+  <div class="search-form">
       <%= simple_form_for @screening do |f| %>
         <div class="row" style="margin: 0">
         <%= f.input :location %>
         <%= f.input :datetime, as: :date %>
          <%= f.input :number_of_guests %>
-         <div class="search-button">
-        <%= submit_tag "Search", class: "btn btn-danger btn-lg btn-block " %>
+         </div>
+        <div class="search-button">
+        <%= submit_tag "Search", class: "btn btn-dark btn-lg" %>
+        </div>
       <% end %>
       </div>
-</div>
-</div>
-
-
-
-<div class="navbar fixed-top"></div>
-<div class="main container">
-  <div class="banner">
-    <div class="banner-content">
-      <div class="title">
-        <h1>The screenings</h1>
-      </div>
+      <div class="Add">
+      <% if policy(Screening).create? %>
+        <%= link_to "New screening", new_screening_path %>
+      <% end %>
     </div>
-  </div>
-  <div class="container">
-  <%= link_to "add a screening", new_screening_path, class:"btn" %>
-    <% @screenings.each do |screening| %>
-      <h2><%= link_to screening.film, screening_path(screening), class:"card-link" %></h2>
-  <% end %>
-  </div>
 </div>
-<% if policy(Screening).create? %>
-  <%= link_to "New screening", new_screening_path %>
-<% end %>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="title">
+        <h1>The Screenings</h1>
+</div>
+
+<br>
+<br>
+
+<div class="list">
+  <ul class="list-group list-group-flush">
+    <% @screenings.each do |screening| %>
+      <h2><li class="list-group-item"><%= link_to screening.film, screening_path(screening), class:"card-link" %></li></h2>
+  <% end %>
+  </ul>
+  </div>
+<br>
+<br>
+
+
+</div>

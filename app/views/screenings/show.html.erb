@@ -1,11 +1,14 @@
-<h1>Film Decription</h1>
-  <ul>
-      <li>
-        <%= @screening.film %>
-        <%= @screening.description %>
-        <%= @screening.price %>
-      </li>
-  </ul>
 
+<div class="container">
 
-
+<div class="card-trip">
+  <img src="https://images.unsplash.com/photo-1588823400943-b85ba1a6d19a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80" />
+  <div class="card-trip-infos">
+    <div>
+      <h1><%= @screening.film %></h1>
+      <p><%= @screening.description %></p>
+    </div>
+    <h2 class="card-pricing"><%= @screening.price%>€</h2>
+  </div>
+</div>
+</div>

@@ -1,2 +1,66 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.row {
+  color: white;
+}
+
+.list-group-flush {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 29px;
+}
+
+h2 {
+  a {
+  color: #5F5F5F;
+  }
+}
+
+a {
+    color: #FFFFFF;
+  }
+
+h2 {
+  font-size : 18px;
+}
+
+.title {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+text-align: center;
+}
+
+.align {
+  display: flex;
+  flex-direction: row;
+}
+
+.add {
+  text-align: right;
+}
