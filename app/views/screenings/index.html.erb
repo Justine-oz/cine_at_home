@@ -1,3 +1,20 @@
+<div class="container">
+<div class="search-form">
+    <h1>Find a wonderful screening near you</h1>
+      <%= simple_form_for @screening do |f| %>
+        <div class="row" style="margin: 0">
+        <%= f.input :location %>
+        <%= f.input :datetime, as: :date %>
+         <%= f.input :number_of_guests %>
+         <div class="search-button">
+        <%= submit_tag "Search", class: "btn btn-danger btn-lg btn-block " %>
+      <% end %>
+      </div>
+</div>
+</div>
+
+
+
 <div class="navbar fixed-top"></div>
 <div class="main container">
   <div class="banner">
@@ -10,8 +27,7 @@
   <div class="container">
   <%= link_to "add a screening", new_screening_path, class:"btn" %>
     <% @screenings.each do |screening| %>
-      <h2>@screening.film</h2>
-      <%= link_to "", screening_path(screening), class:"card-link" %>
+      <h2><%= link_to screening.film, screening_path(screening), class:"card-link" %></h2>
   <% end %>
   </div>
 </div>
