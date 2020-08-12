@@ -1,2 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+<div class="search-form">
+    <h1>Find a wonderful screening near you</h1>
+      <%= simple_form_for @screening do |f| %>
+        <div class="row" style="margin: 0">
+        <%= f.input :location %>
+        <%= f.input :datetime, as: :date %>
+         <%= f.input :number_of_guests %>
+         <div class="search-button">
+        <%= submit_tag "Search", class: "btn btn-danger btn-lg btn-block " %>
+      <% end %>
+      </div>
+</div>
+</div>
