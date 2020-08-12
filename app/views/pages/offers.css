@@ -1,0 +1,328 @@
+/* Rectangle 7 */
+
+position: absolute;
+width: 350px;
+height: 160px;
+left: 30px;
+top: 520px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 7px;
+
+
+/* Hôte Ryad */
+
+position: absolute;
+width: 210px;
+height: 25px;
+left: 148px;
+top: 601px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+
+
+/* Star 9 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 153px;
+top: 643px;
+
+background: #F3C522;
+
+
+/* Star 10 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 186px;
+top: 643px;
+
+background: #F3C522;
+
+
+/* Star 11 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 221px;
+top: 643px;
+
+background: #F3C522;
+
+
+/* Star 12 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 254px;
+top: 643px;
+
+background: #F3C522;
+
+
+/* Sel ou Poivre ? */
+
+position: absolute;
+width: 94px;
+height: 129px;
+left: 41px;
+top: 535px;
+
+background: url(L_Aile_ou_la_Cuisse.jpg);
+
+
+/* Sel ou Poivre ? 15/09 */
+
+position: absolute;
+width: 210px;
+height: 48px;
+left: 148px;
+top: 535px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 350px;
+height: 160px;
+left: 30px;
+top: 315px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 7px;
+
+
+/* Star 5 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 153px;
+top: 433px;
+
+background: #F3C522;
+
+
+/* Star 6 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 186px;
+top: 433px;
+
+background: #F3C522;
+
+
+/* Star 7 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 221px;
+top: 433px;
+
+background: #F3C522;
+
+
+/* Star 8 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 254px;
+top: 433px;
+
+background: #F3C522;
+
+
+/* Hôte Cassandra */
+
+position: absolute;
+width: 210px;
+height: 25px;
+left: 148px;
+top: 396px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+
+
+/* kuzco */
+
+position: absolute;
+width: 96px;
+height: 129px;
+left: 39px;
+top: 330px;
+
+background: url(affiche-kuzco-empereur-megalo-01.jpg);
+
+
+/* F#@%ing Emperor ! 13/09 */
+
+position: absolute;
+width: 210px;
+height: 48px;
+left: 148px;
+top: 330px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 350px;
+height: 160px;
+left: 30px;
+top: 116px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 7px;
+
+
+/* Star 1 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 153px;
+top: 229px;
+
+background: #F3C522;
+
+
+/* Star 2 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 186px;
+top: 229px;
+
+background: #F3C522;
+
+
+/* Star 3 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 221px;
+top: 229px;
+
+background: #F3C522;
+
+
+/* Star 4 */
+
+position: absolute;
+width: 31px;
+height: 31px;
+left: 254px;
+top: 229px;
+
+background: #F3C522;
+
+
+/* Hôte Maxime */
+
+position: absolute;
+width: 210px;
+height: 25px;
+left: 148px;
+top: 198px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+
+
+/* La révolution */
+
+position: absolute;
+width: 97px;
+height: 129px;
+left: 39px;
+top: 131px;
+
+background: url(19172614.jpg);
+
+
+/* Et viva la révolution ! 08/09 */
+
+position: absolute;
+width: 210px;
+height: 120px;
+left: 148px;
+top: 132px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+
+
+/* Offers */
+
+position: absolute;
+width: 291px;
+height: 58px;
+left: 53px;
+top: 24px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;

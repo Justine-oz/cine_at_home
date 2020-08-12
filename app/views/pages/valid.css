@@ -1,0 +1,48 @@
+/* Godzilla */
+
+position: absolute;
+width: 369px;
+height: 523px;
+left: 0px;
+top: 146px;
+
+background: url(139009.jpg);
+
+
+/* Les projections de Maxime */
+
+position: absolute;
+width: 291px;
+height: 58px;
+left: 39px;
+top: 24px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 14 */
+
+position: absolute;
+width: 448px;
+height: 612px;
+left: -39px;
+top: 16px;
+
+background: rgba(0, 0, 0, 0.75);
+
+
+/* PICTO reservation 2 */
+
+position: absolute;
+left: 62.13%;
+right: 24.9%;
+top: 19.27%;
+bottom: 67.76%;

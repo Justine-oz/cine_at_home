@@ -1,0 +1,59 @@
+/* Godzilla */
+
+position: absolute;
+width: 369px;
+height: 523px;
+left: 0px;
+top: 146px;
+
+background: url(139009.jpg);
+
+
+/* Les projections de Maxime */
+
+position: absolute;
+width: 291px;
+height: 58px;
+left: 39px;
+top: 24px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 202px;
+height: 202px;
+left: 84px;
+top: 291px;
+
+background: rgba(255, 253, 237, 0.76);
+border: 3px solid #000000;
+box-sizing: border-box;
+
+
+/* Vous êtes sûr ? */
+
+position: absolute;
+width: 199px;
+height: 206px;
+left: 92px;
+top: 355px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+
+color: #000000;

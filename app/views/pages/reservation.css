@@ -1,0 +1,257 @@
+/* LORDI */
+
+position: absolute;
+width: 92px;
+height: 129px;
+left: 264px;
+top: 484px;
+
+background: url(51D7oa72tQL.jpg);
+
+
+/* PREDATORS */
+
+position: absolute;
+width: 91px;
+height: 128px;
+left: 140px;
+top: 484px;
+
+background: url(no289-my-predators-minimal-movie-poster-chungkong-art.jpg);
+
+
+/* DIRT */
+
+position: absolute;
+width: 87px;
+height: 129px;
+left: 18px;
+top: 484px;
+
+background: url(MV5BNjRhYmRmNTItMmNiMC00M2FjLWExM2UtY2RlYjgzY2EyY2EwXkEyXkFqcGdeQXVyODIyOTEyMzY@.jpg);
+
+
+/* DR. */
+
+position: absolute;
+width: 85px;
+height: 132px;
+left: 268px;
+top: 299px;
+
+background: url(MV5BZWI3ZTMxNjctMjdlNS00NmUwLWFiM2YtZDUyY2I3N2MxYTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@.jpg);
+
+
+/* CA$INO */
+
+position: absolute;
+width: 87px;
+height: 123px;
+left: 144px;
+top: 299px;
+
+background: url(Casino-nouvelle-affiche.jpg);
+
+
+/* OUAT in.... */
+
+position: absolute;
+width: 84px;
+height: 124px;
+left: 25px;
+top: 299px;
+
+background: url(MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@.jpg);
+
+
+/* SpaceBals */
+
+position: absolute;
+width: 84px;
+height: 131px;
+left: 264px;
+top: 109px;
+
+background: url(49f88ee620da2bc5556e6b8f1bf899ab_13667507-c1ad-4b20-883c-927567a44974_480x.jpg);
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 216px;
+height: 175px;
+left: 140px;
+top: 105px;
+
+background: rgba(255, 255, 253, 0.89);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 7px;
+
+
+/* Godzilla */
+
+position: absolute;
+width: 91px;
+height: 129px;
+left: 140px;
+top: 109px;
+
+background: url(139009.jpg);
+
+
+/* La révolution */
+
+position: absolute;
+width: 97px;
+height: 129px;
+left: 18px;
+top: 109px;
+
+background: url(19172614.jpg);
+
+
+/* Les projections de Maxime */
+
+position: absolute;
+width: 291px;
+height: 58px;
+left: 42px;
+top: 24px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Après avoir pensé qu’il s’agissait d’une catastrophe naturelle, les scientifiques se rendent compte que le responsable de ce désastre n’est autre qu’un monste géante. */
+
+position: absolute;
+width: 113px;
+height: 41px;
+left: 235px;
+top: 175px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 7px;
+line-height: 8px;
+
+color: #000000;
+
+
+
+/* Godzilla Resurgence */
+
+position: absolute;
+width: 106px;
+height: 28px;
+left: 235px;
+top: 112px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* 13/09 20H */
+
+position: absolute;
+width: 49px;
+height: 20px;
+left: 237px;
+top: 151px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 7px;
+line-height: 8px;
+
+color: #000000;
+
+
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 158px;
+height: 51px;
+left: 169px;
+top: 269px;
+
+background: #FFFFFD;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 7px;
+
+
+/* 1 spectateur 9€ 2 spectateurs 18€ 3 spectateurs 27€ */
+
+position: absolute;
+width: 97px;
+height: 42px;
+left: 199px;
+top: 273px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+
+color: #000000;
+
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 158px;
+height: 21px;
+left: 169px;
+top: 249px;
+
+background: #FFFFFD;
+border: 0.6px solid #000000;
+box-sizing: border-box;
+border-radius: 7px;
+
+
+/* Vector 1 */
+
+position: absolute;
+width: 10px;
+height: 9px;
+left: 309px;
+top: 254px;
+
+border: 1.3px solid #000000;
+
+
+/* Nombre de spectateurs */
+
+position: absolute;
+width: 126px;
+height: 14px;
+left: 177px;
+top: 252px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #000000;
