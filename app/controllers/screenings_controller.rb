@@ -3,6 +3,7 @@ class ScreeningsController < ApplicationController
  before_action :set_screening, only: [:show, :edit, :update, :destroy]
 
   def index
+    @screening = Screening.new
     @screenings = policy_scope(Screening).order(created_at: :desc)
   end
 
@@ -12,7 +13,6 @@ class ScreeningsController < ApplicationController
   def new
     @screening = Screening.new
   end
-
 
   def create
     @screening = Screening.new(screening_params)
@@ -32,8 +32,6 @@ class ScreeningsController < ApplicationController
     @screening.update(params[:screening])
   end
 
-
-
   def search
   end
 
@@ -48,6 +46,7 @@ class ScreeningsController < ApplicationController
   private
   def set_screening
     @screening = Screening.find(params[:id])
+    authorize @screening
   end
 
   def screening_params
