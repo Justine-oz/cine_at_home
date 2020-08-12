@@ -12,3 +12,12 @@
       </div>
 </div>
 </div>
+
+
+
+<h1>Screenings available :</h1>
+<% @screenings.each do |s| %>
+<ul>
+  <li><%= s.film %></li>
+</ul>
+<% end %>
