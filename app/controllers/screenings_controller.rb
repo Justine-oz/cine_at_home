@@ -12,9 +12,6 @@ class ScreeningsController < ApplicationController
     end
   end
 
-  def show
-  end
-
   def new
     @screening = Screening.new
     authorize @screening
@@ -29,6 +26,9 @@ class ScreeningsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
   end
 
   def edit
@@ -50,13 +50,14 @@ class ScreeningsController < ApplicationController
   end
 
   private
+
   def set_screening
     @screening = Screening.find(params[:id])
     authorize @screening
   end
 
   def screening_params
-    params.require(:screening).permit(:location, :film, :number_of_guests, :price, :description, :datetime)
+    params.require(:screening).permit(:location, :film, :number_of_guests, :price, :description, :datetime, photos: [])
   end
 
 end

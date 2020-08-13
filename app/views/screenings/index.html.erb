@@ -15,32 +15,24 @@
     <h1 class="title">Find a <strong>wonderful screening</strong> near you!</h1>
     <div class="align">
       <form>
-  <div class="row">
+  <div class="search-form">
     <%= form_tag screenings_path, method: :get do %>
-    <div class="col">
     <%= text_field_tag :location,
       params[:location],
       class: "form-control",
       placeholder: "What's your location?"
     %>
-    </div>
-    <div class="col">
       <%= text_field_tag :date,
       params[:date],
       class: "flatpickr input",
       placeholder: "When?"
       %>
-    </div>
-    <div class="col">
       <%= text_field_tag :capacity,
       params[:capacity],
       class: "form-control",
       placeholder: "How many guests?"
     %>
-    </div>
-    <div class="col">
       <%= submit_tag "Search", class: "btn btn-primary" %>
-    </div>
     <% end %>
   </div>
 </form>
