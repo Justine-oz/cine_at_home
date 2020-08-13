@@ -32,6 +32,6 @@ import { newPlugin } from '../plugins/new';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initFlatpickr();
-  newPlugin();
+  // newPlugin();
 });
 
