@@ -1,32 +1,57 @@
 <div class="main-container">
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1541415109140-571dd7c83b75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1542&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/abstract.jpg);">
   <div class="container">
-    <h1>Find a <strong>wonderful screening</strong> near you!</h1>
+    <div class="animated-css">
+    <h1 class="effet">
+      <span>Ciné @ Home</span>
+    </h1>
+<div class='outer-scratch'>
+  <div class="inner-scratch">
+    <div class="background grain"></div>
+  </div>
+</div>
+</div>
+    <h1 class="title">Find a <strong>wonderful screening</strong> near you!</h1>
     <div class="align">
-  <div class="search-form">
-      <%= simple_form_for @screening do |f| %>
-        <div class="row" style="margin: 0">
-        <%= f.input :location %>
-        <%= f.input :datetime, as: :date %>
-         <%= f.input :number_of_guests %>
-         </div>
-        <div class="search-button">
-        <%= submit_tag "Search", class: "btn btn-dark btn-lg" %>
-        </div>
-      <% end %>
-      </div>
-      <div class="Add">
-      <% if policy(Screening).create? %>
-        <%= link_to "New screening", new_screening_path %>
-      <% end %>
+      <form>
+  <div class="row">
+    <%= form_tag screenings_path, method: :get do %>
+    <div class="col">
+    <%= text_field_tag :location,
+      params[:location],
+      class: "form-control",
+      placeholder: "What's your location?"
+    %>
     </div>
+    <div class="col">
+      <%= text_field_tag :date,
+      params[:date],
+      class: "flatpickr input",
+      placeholder: "When?"
+      %>
+    </div>
+    <div class="col">
+      <%= text_field_tag :capacity,
+      params[:capacity],
+      class: "form-control",
+      placeholder: "How many guests?"
+    %>
+    </div>
+    <div class="col">
+      <%= submit_tag "Search", class: "btn btn-primary" %>
+    </div>
+    <% end %>
+  </div>
+</form>
+
 </div>
 </div>
 </div>
 <br>
 <br>
 <br>
+
 
 <div class="title">
         <h1>The Screenings</h1>
@@ -45,5 +70,13 @@
 <br>
 <br>
 
+ <div class="Add">
+      <% if policy(Screening).create? %>
+        <%= link_to "New screening", new_screening_path %>
+      <% end %>
+    </div>
 
 </div>
+
+
+

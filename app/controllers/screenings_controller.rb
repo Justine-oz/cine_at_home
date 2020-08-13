@@ -5,6 +5,11 @@ class ScreeningsController < ApplicationController
   def index
     @screening = Screening.new
     @screenings = policy_scope(Screening).order(created_at: :desc)
+    if params[:location].present? && params[:date].present? && params[:capacity].present?
+      @screenings = Screening.in(params[:location]).day(params[:date]).min_capacity(params[:capacity])
+    else
+      @screenings = Screening.all
+    end
   end
 
   def show
@@ -12,6 +17,7 @@ class ScreeningsController < ApplicationController
 
   def new
     @screening = Screening.new
+    authorize @screening
   end
 
   def create

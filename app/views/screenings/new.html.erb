@@ -1,1 +1,115 @@
-new.html.erb
+ <!-- BOITE DE RESERVATION -->
+  <div id="main-content-section" data-magellan-target="main-content-section"></div>
+    <form action="" class="thecontainer booking" name="booking">
+
+<!-- En-tête Boite de Reservation -->
+      <div class="resaheader">
+<!-- Adresse dans l'en-tête -->
+      <div>
+        <h2>Enter a movie session</h2>
+    </div>
+<!-- Declarations des differentes classes du calendrier -->
+  <div id="resa">
+    <div class="icon"></div>
+        <p>Location</p>
+      </div>
+
+   <div class="thecontainer calendar">
+     <div class="resaheader"></div>
+     <div id="overlay"></div>
+     <div class="icon arr prev"></div>
+     <div class="month">MAI 2018</div>
+     <div class="icon arr next"></div>
+<!-- construction du Calendrier grace au Tableau -->
+    <table>
+      <tr>
+        <th>Dim</th><th>Lun</th><th>Mar</th><th>Mer</th><th>Jeu</th><th>Ven</th><th>Sam</th>
+      </tr>
+      <tr>
+        <td class="notCurMonth">29</td><td class="notCurMonth">30</td>
+        <td>1</td><td>2</td><td class="curDay">3</td><td>4</td><td>5</td>
+      </tr>
+      <tr>
+        <td>6</td><td class="holiday">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+      </tr>
+      <tr>
+        <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+      </tr>
+      <tr>
+        <td>20</td><td>21</td><td>22</td><td class="holiday">23</td><td>24</td><td>25</td><td>26</td>
+      </tr>
+      <tr>
+        <td>27</td><td>28</td><td>29</td><td>30</td>
+        <td class="notCurMonth">1</td><td class="notCurMonth">2</td class="notCurMonth"><td class="notCurMonth">3</td>
+      </tr>
+    </table>
+ <!-- bouton de recherche de date -->
+    <button class="button-big" id="add_event">rechercher une date</button>
+  </div>
+<!-- Bouton Arrivée -->
+    <div class="dates" data-type="none">
+      <label for="checkin">Arrivée</label>
+      <div class="input-text">
+        <input type="datetime" value="01 MAI, 2018" id="checkin" readonly>
+        <div class="icon pop-up"></div>
+      </div>
+<!-- Bouton Départ -->
+      <label for="checkout">Départ</label>
+      <div class="input-text">
+        <input type="datetime" value="01 MAI, 2018" id="checkout" readonly>
+        <div class="icon pop-up"></div>
+      </div>
+<!-- bouton date fléxible -->
+      <div class="div-chck">
+        <input type="checkbox" id="check">
+        <div class="icon input-text"></div>
+        <label for="check" class="checkbox">Date flexible</label>
+      </div>
+    </div>
+<!-- Bouton choix du nombre d'adultes -->
+    <ul class="persons">
+      <li>
+        <label>Adultes</label>
+        <div class="input-text">
+          <select name="adults">
+            <option value="1">1</option>
+            <option value="2" selected="selected">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <div class="icon"></div>
+        </div>
+      </li>
+<!-- Bouton choix du nombre d'enfant -->
+      <li>
+        <label>Enfant de moins de 16ans</label>
+        <div class="input-text">
+          <select name="children">
+            <option value="0">0</option>
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <div class="icon"></div>
+        </div>
+      </li>
+    <!-- formulaire Chambres -->
+     <br> <br><li class="chambres">
+        <label>Chambres & Suites</label>
+        <div class="input-text">
+          <select name="Chambre">
+            <option value="Chambre Classique">Chambre Classique</option>
+            <option value="Chambre Confort" selected="selected">Chambre Confort</option>
+            <option value="Chambre Deluxe">Chambre Deluxe</option>
+            <option value="Suite">Suite</option>
+          </select>
+          <div class="icon"></div>
+        </div>
+      </li>
+      </ul>
+<!-- bouton de recherche général -->
+    <button class="button-big" id="search"><div class="icon"></div>Rechercher</button>
+      </form></div>
+</div>
+</div>
