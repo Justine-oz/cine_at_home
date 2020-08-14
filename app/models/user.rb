@@ -11,4 +11,9 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :description, presence: true
   validates :phone_number, format: { with: /(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})/ }
+
+  def name
+    "#{first_name} #{last_name}"
+  end
+
 end

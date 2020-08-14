@@ -1,0 +1,62 @@
+<div class="ticket-css">
+  <div class="ticket">
+    <div class="holes-top"></div>
+    <div class="title">
+      <p class="cinema">Ciné @ Home presents</p>
+      <p class="movie-title"><%= @screening.film %></p>
+    </div>
+    <div class="poster">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/25240/only-god-forgives.jpg" alt="Movie: Only God Forgives" />
+    </div>
+    <div class="info">
+    <table>
+      <tr>
+        <th>LOCATION</th>
+      </tr>
+      <tr>
+        <td class="bigger"><%= @screening.location %></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>DATE</th>
+        <th>PRICE</th>
+      </tr>
+      <tr>
+        <td><%= @screening.datetime %></td>
+        <td><%= @screening.price %></td>
+      </tr>
+    </table>
+    </div>
+    <div class="holes-lower"></div>
+    <div class="serial">
+      <table class="barcode"><tr></tr></table>
+      <table class="numbers">
+        <tr>
+          <td>9</td>
+          <td>1</td>
+          <td>7</td>
+          <td>3</td>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1</td>
+          <td>4</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>3</td>
+          <td>4</td>
+          <td>1</td>
+          <td>4</td>
+          <td>5</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
