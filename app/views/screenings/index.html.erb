@@ -1,7 +1,15 @@
 <div class="main-container">
 
+
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/abstract.jpg);">
   <div class="container">
+
+    <ul class="nav">
+  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Screenings</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Bookings</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Log in </a></li>
+</ul>
     <div class="animated-css">
     <h1 class="effet">
       <span>CINE @ HOME</span>
@@ -11,9 +19,7 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
+
 
 
   <h1 class="framed"> What we do </h1>
@@ -33,10 +39,6 @@
 
 
 </div>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -66,7 +68,7 @@
       class: "form-control",
       placeholder: "How many guests?"
     %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
+      <%= submit_tag "Search", class: "btn btn-outline-dark" %>
     <% end %>
   </div>
 </form>
@@ -207,6 +209,8 @@
         <%= link_to "New screening", new_screening_path %>
       <% end %>
     </div>
+
+
 </div>
 
 

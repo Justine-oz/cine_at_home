@@ -1,9 +1,6 @@
 
 <div class="container">
 
-    <% @screening.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
 
   </div>
 </div>
@@ -20,15 +17,22 @@
   <div class="cont">
     <div class="card-link">
       <div class="card-img">
-        <div style="background-image:url(https://images.unsplash.com/photo-1528873981-36c6afde7b9d);"></div>
+
+    <% @screening.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
       </div>
       <div class="card-inner">
         <h4><%= @screening.film %></h4>
         <div class="inner-text">
           <p><%= @screening.description%></p>
-           <h2 class="card-pricing"><%= @screening.price%>€</h2>
+
+      <br>
+           <h2 class="card-pricing">Price per person: <%= @screening.price%>€</h2>
       <h2 class="card-pricing">Max capacity: <%= @screening.number_of_guests%></h2>
         </div>
+      <br>
+      <br>
         <div class="col-sm-12 col-md-6">
            <%= simple_form_for [@screening, @booking] do |f| %>
         <%= f.input :number_of_guests %>
