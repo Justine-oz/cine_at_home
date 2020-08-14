@@ -9,4 +9,9 @@ class Screening < ApplicationRecord
   validates :price, presence: true
   validates :description, presence: true
   validates :datetime, presence: true
+  has_many_attached :photos
+
+  scope :in, ->(query) { where('location ILIKE ?', query) }
+  scope :day, ->(start_date) { where('DATE(datetime) = ?', start_date )}
+  scope :min_capacity, ->(guest_quantity = 100) { where('number_of_guests >= ?', guest_quantity) }
 end

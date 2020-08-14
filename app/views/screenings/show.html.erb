@@ -8,6 +8,9 @@
       <h1><%= @screening.film %></h1>
       <p><%= @screening.description %></p>
     </div>
+    <% @screening.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
     <h2 class="card-pricing"><%= @screening.price%>€</h2>
   </div>
 </div>
