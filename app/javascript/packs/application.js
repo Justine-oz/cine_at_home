@@ -28,10 +28,12 @@ import "bootstrap";
 // Internal imports, e.g:
 import { initFlatpickr } from '../plugins/init_flatpickr';
 import { newPlugin } from '../plugins/new';
+import { indexPopular } from '../plugins/index_popular';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initFlatpickr();
   // newPlugin();
+  indexPopular();
 });
 
