@@ -31,7 +31,7 @@ Screening.destroy_all
 
 puts "Create screanings"
 
-20.times do
+9.times do
 user1 = User.last
   screening = Screening.new(
     film: Faker::Movie.title,

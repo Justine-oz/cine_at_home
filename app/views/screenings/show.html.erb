@@ -1,17 +1,56 @@
 
 <div class="container">
 
-<div class="card-trip">
-  <img src="https://images.unsplash.com/photo-1588823400943-b85ba1a6d19a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80" />
-  <div class="card-trip-infos">
-    <div>
-      <h1><%= @screening.film %></h1>
-      <p><%= @screening.description %></p>
-    </div>
     <% @screening.photos.each do |photo| %>
       <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
     <% end %>
-    <h2 class="card-pricing"><%= @screening.price%>€</h2>
+
   </div>
 </div>
+
+
+
+
+  </div>
+    <%#= link_to booking_path(@screening), method: :delete, data: { confirm: "Are you sure?" } do %>
+  </div>
+
+<div class="container-cards">
+<div class="row row-big-card">
+  <div class="cont">
+    <div class="card-link">
+      <div class="card-img">
+        <div style="background-image:url(https://images.unsplash.com/photo-1528873981-36c6afde7b9d);"></div>
+      </div>
+      <div class="card-inner">
+        <h4><%= @screening.film %></h4>
+        <div class="inner-text">
+          <p><%= @screening.description%></p>
+           <h2 class="card-pricing"><%= @screening.price%>€</h2>
+      <h2 class="card-pricing">Max capacity: <%= @screening.number_of_guests%></h2>
+        </div>
+        <div class="col-sm-12 col-md-6">
+           <%= simple_form_for [@screening, @booking] do |f| %>
+        <%= f.input :number_of_guests %>
+        <%= f.submit 'Book this screening', class: "btn btn-outline-dark" %>
+    <% end %>
+  </div>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+</div>
+
+<div class="popup-booking">
+<ul>
+  <% @screening.bookings.each do |booking| %>
+    <li>
+      <p>Thanks <%= booking.user.name %> Your booking was succeesful ! (<%= booking.number_of_guests %> guests)</p>
+    </li>
+  <% end %>
+</ul>
+</div>
+</div>
+
